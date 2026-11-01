@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小林攝影工作室 | 臺中婚紗婚禮紀錄</title>
+  <meta name="description" content="小林攝影工作室位於臺中，提供自然風格婚紗攝影、婚禮紀錄與個人形象照服務。以真實情緒與自然光影，記錄每一段珍貴故事。">
+  <meta name="keywords" content="臺中攝影,婚紗攝影,婚禮紀錄,形象照,小林攝影工作室">
+  <meta name="author" content="小林攝影工作室">
+  <meta name="theme-color" content="#F3EFE8">
+  <meta property="og:title" content="小林攝影工作室 | 用影像收藏真實">
+  <meta property="og:description" content="自然、不過度修飾，重視情緒與現場關係。">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600&family=Noto+Serif+TC:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#F3EFE8;--white:#fff;--brown:#594B3E;--gray:#8D8379;--line:#DED6CC;--light:#E9E1D7}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:85px}
+    body{background:var(--bg);color:var(--brown);font-family:"Noto Sans TC",sans-serif;font-weight:300;line-height:1.8}
+    img{width:100%;display:block;object-fit:cover}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(1180px,88%);margin:auto}
+    .section{padding:110px 0}
+    .en{font-family:Georgia,serif;letter-spacing:3px;font-size:12px;color:var(--gray);text-transform:uppercase}
+    .section-title{font-family:"Noto Serif TC",serif;font-size:clamp(28px,4vw,42px);font-weight:400;margin:10px 0 18px}
+    .section-intro{color:var(--gray);font-size:14px;max-width:520px}
+    header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(243,239,232,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(89,75,62,.1)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-family:"Noto Serif TC",serif;font-size:21px;letter-spacing:2px}
+    .nav-links{display:flex;gap:30px;list-style:none;font-size:13px}
+    .nav-links a:hover{color:#A58C72}
+    .menu-btn{display:none;background:none;border:0;font-size:25px;color:var(--brown);cursor:pointer}
+    .hero{min-height:720px;height:100vh;max-height:950px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(28,24,20,.58),rgba(28,24,20,.08)),url("images/hero.jpg") center/cover no-repeat;color:white}
+    .hero-content{width:min(1180px,88%);margin:auto;padding-top:70px}
+    .hero .en{color:#E8DDD0;margin-bottom:20px}
+    .hero h1{font-family:"Noto Serif TC",serif;font-size:clamp(38px,6vw,68px);font-weight:400;letter-spacing:5px;line-height:1.5}
+    .hero p{margin:22px 0 35px;font-size:15px;letter-spacing:2px}
+    .hero-buttons{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{padding:12px 32px;display:inline-block;font-size:13px;letter-spacing:1px;transition:.3s;border:1px solid white}
+    .btn-light{background:white;color:var(--brown)}.btn-outline{color:white}
+    .btn:hover{background:#C5B39F;color:white;border-color:#C5B39F}
+    .portfolio{background:var(--white)}
+    .portfolio-header{text-align:center;margin-bottom:55px}
+    .portfolio-tabs{display:flex;justify-content:center;gap:35px;margin:35px 0;flex-wrap:wrap}
+    .tab{border:0;background:none;color:var(--gray);cursor:pointer;padding:8px 4px;border-bottom:1px solid transparent}
+    .tab.active,.tab:hover{color:var(--brown);border-color:var(--brown)}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .photo{overflow:hidden;background:var(--light)}.photo img{aspect-ratio:4/5;transition:transform .6s}
+    .photo:hover img{transform:scale(1.04)}.photo[hidden]{display:none}
+    .gallery-caption{padding:12px 2px 22px;font-size:13px;letter-spacing:1px}
+    .gallery-caption span{display:block;color:var(--gray);font-size:11px}
+    .stories{background:var(--bg)}
+    .story{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;margin-top:65px}
+    .story:nth-child(even){direction:rtl}.story:nth-child(even)>*{direction:ltr}
+    .story img{height:460px}
+    .story-content h3{font-family:"Noto Serif TC",serif;font-size:26px;font-weight:400;margin:12px 0 20px}
+    .story-content p{font-size:14px;color:var(--gray);margin-bottom:15px}
+    .story-label{font-size:12px;color:#A58C72;letter-spacing:2px}
+    .services{background:var(--white)}.services-header{text-align:center;margin-bottom:55px}
+    .service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .service-card{border:1px solid var(--line);padding:38px 28px;transition:.3s}
+    .service-card:hover{transform:translateY(-5px);border-color:#B6A38E}
+    .service-card h3{font-family:"Noto Serif TC",serif;font-size:22px;font-weight:400;margin:12px 0}
+    .price{font-family:Georgia,serif;font-size:27px;margin:20px 0}.price small{font-size:12px;color:var(--gray)}
+    .service-card ul{list-style:none;border-top:1px solid var(--line);padding-top:20px;font-size:13px;color:var(--gray)}
+    .service-card li{margin:10px 0}.service-note{font-size:12px;color:var(--gray);margin-top:28px;text-align:center}
+    .process{background:var(--bg)}.process-header{text-align:center;margin-bottom:55px}
+    .process-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .process-item{text-align:center;padding:25px 10px;border-top:1px solid #BDAF9F}
+    .process-number{font-family:Georgia,serif;font-size:30px;color:#B39C83}
+    .process-item h3{font-size:16px;font-weight:400;margin:10px 0}.process-item p{color:var(--gray);font-size:12px}
+    .about{background:var(--white)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+    .about img{height:560px}.about-content p{font-size:14px;color:var(--gray);margin:20px 0}
+    .signature{font-family:Georgia,serif;font-style:italic;font-size:25px;margin-top:30px}
+    .contact{background:var(--bg)}.contact-header{text-align:center;margin-bottom:45px}
+    .contact-form{max-width:760px;margin:auto;background:white;padding:45px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .form-group{display:flex;flex-direction:column;gap:8px}.form-group.full{grid-column:1/-1}
+    .form-group label{font-size:13px}
+    .form-group input,.form-group select,.form-group textarea{border:1px solid var(--line);background:#FFFEFC;padding:12px;outline:none;color:var(--brown);width:100%;border-radius:0}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:#A58C72}
+    .form-group textarea{min-height:120px;resize:vertical}
+    .submit-btn{width:100%;padding:15px;margin-top:25px;border:none;background:var(--brown);color:white;cursor:pointer;transition:.3s}
+    .submit-btn:hover{background:#88735F}.submit-btn:disabled{opacity:.65;cursor:wait}
+    .form-note{font-size:11px;color:var(--gray);margin-top:15px}
+    #formStatus{font-size:13px;margin-top:15px;text-align:center}
+    footer{background:#4B4036;color:white;padding:65px 0 25px}
+    .footer-content{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:45px}
+    .footer-content h3{font-family:"Noto Serif TC",serif;font-size:23px;font-weight:400;margin-bottom:15px}
+    .footer-content p,.footer-content a{color:#D0C5BA;font-size:13px;display:block;margin:8px 0}
+    .footer-content a:hover{color:white}
+    .copyright{border-top:1px solid #74665A;padding-top:20px;text-align:center;color:#C0B5A9;font-size:11px}
+    @media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}.service-grid{grid-template-columns:1fr 1fr}.about-grid{gap:35px}.process-grid{grid-template-columns:repeat(3,1fr)}.story{gap:35px}}
+    @media(max-width:768px){
+      .section{padding:75px 0}.menu-btn{display:block}
+      .nav-links{display:none;position:absolute;top:76px;left:0;width:100%;flex-direction:column;background:var(--bg);padding:25px 6%;gap:18px;border-bottom:1px solid var(--line)}
+      .nav-links.show{display:flex}.hero{min-height:650px;height:85vh}.hero h1{letter-spacing:2px}
+      .gallery{grid-template-columns:1fr;gap:10px}.photo img{aspect-ratio:4/3}
+      .portfolio-tabs{gap:20px}
+      .story,.story:nth-child(even){grid-template-columns:1fr;direction:ltr;gap:25px;margin-top:45px}
+      .story img{height:350px}.service-grid{grid-template-columns:1fr}
+      .process-grid{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr;gap:35px}
+      .about img{height:400px}.contact-form{padding:25px 18px}
+      .form-grid{grid-template-columns:1fr}.form-group.full{grid-column:auto}
+      .footer-content{grid-template-columns:1fr;gap:25px}
+    }
+    @media(max-width:480px){.process-grid{grid-template-columns:1fr}.hero p{font-size:13px}}
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a href="#home" class="logo">小林攝影工作室.</a>
+    <button class="menu-btn" id="menuBtn" aria-label="開啟導覽選單" aria-expanded="false">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">首頁</a></li><li><a href="#portfolio">作品集</a></li>
+      <li><a href="#services">服務方案</a></li><li><a href="#about">關於我們</a></li>
+      <li><a href="#contact">聯絡詢問</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="en">LIN PHOTOGRAPHY STUDIO</div>
+      <h1>讓每個瞬間<br>都有值得珍藏的模樣。</h1>
+      <p>婚紗攝影・婚禮紀錄・個人形象照</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-light">看作品 →</a>
+        <a href="#contact" class="btn btn-outline">詢問檔期 →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section portfolio" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div class="en">OUR PORTFOLIO</div>
+        <h2 class="section-title">每一張照片，都是一段故事。</h2>
+        <p class="section-intro" style="margin:auto">不刻意安排所有表情，只希望留下最自然、最真實的情緒。</p>
+        <div class="portfolio-tabs">
+          <button class="tab active" data-filter="all" aria-pressed="true">全部作品</button>
+          <button class="tab" data-filter="wedding" aria-pressed="false">婚紗攝影</button>
+          <button class="tab" data-filter="ceremony" aria-pressed="false">婚禮紀錄</button>
+          <button class="tab" data-filter="portrait" aria-pressed="false">形象照</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <article class="photo" data-category="wedding"><img src="images/wedding-01.jpg" alt="戶外自然光婚紗攝影，新人在草地上相視而笑" loading="lazy"><div class="gallery-caption">A Moment Together<span>婚紗攝影 / 戶外紀錄</span></div></article>
+        <article class="photo" data-category="wedding"><img src="images/wedding-02.jpg" alt="新人在夕陽下的浪漫婚紗雙人照" loading="lazy"><div class="gallery-caption">Golden Memories<span>婚紗攝影 / 夕陽系列</span></div></article>
+        <article class="photo" data-category="wedding"><img src="images/wedding-03.jpg" alt="白色婚紗與自然光影交織的室內婚紗作品" loading="lazy"><div class="gallery-caption">Soft Light<span>婚紗攝影 / 室內系列</span></div></article>
+        <article class="photo" data-category="wedding"><img src="images/wedding-04.jpg" alt="新人牽手漫步的日系自然風婚紗照片" loading="lazy"><div class="gallery-caption">Our Story<span>婚紗攝影 / 日系紀實</span></div></article>
+        <article class="photo" data-category="ceremony"><img src="images/ceremony-01.jpg" alt="婚禮現場新人交換誓言的真實紀錄" loading="lazy"><div class="gallery-caption">The Promise<span>婚禮紀錄 / 儀式時刻</span></div></article>
+        <article class="photo" data-category="ceremony"><img src="images/ceremony-02.jpg" alt="婚禮宴客中親友與新人分享喜悅的畫面" loading="lazy"><div class="gallery-caption">Together<span>婚禮紀錄 / 親友互動</span></div></article>
+        <article class="photo" data-category="ceremony"><img src="images/ceremony-03.jpg" alt="新娘準備婚禮時的自然側拍紀錄" loading="lazy"><div class="gallery-caption">Before The Day<span>婚禮紀錄 / 新娘準備</span></div></article>
+        <article class="photo" data-category="ceremony"><img src="images/ceremony-04.jpg" alt="婚禮結束後新人相擁的溫馨紀實攝影" loading="lazy"><div class="gallery-caption">Forever<span>婚禮紀錄 / 情感紀實</span></div></article>
+        <article class="photo" data-category="portrait"><img src="images/portrait-01.jpg" alt="自然光線下女性個人形象肖像攝影" loading="lazy"><div class="gallery-caption">Personal Style<span>形象照 / 個人肖像</span></div></article>
+        <article class="photo" data-category="portrait"><img src="images/portrait-02.jpg" alt="簡約背景下男性專業形象照" loading="lazy"><div class="gallery-caption">Professional<span>形象照 / 職業形象</span></div></article>
+        <article class="photo" data-category="portrait"><img src="images/portrait-03.jpg" alt="自然窗邊光影呈現人物氣質的形象攝影" loading="lazy"><div class="gallery-caption">Natural Light<span>形象照 / 自然風格</span></div></article>
+        <article class="photo" data-category="portrait"><img src="images/portrait-04.jpg" alt="簡約時尚風格個人半身肖像攝影" loading="lazy"><div class="gallery-caption">My Portrait<span>形象照 / 時尚肖像</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section stories">
+    <div class="container">
+      <div class="en">FEATURED STORIES</div>
+      <h2 class="section-title">那些值得被記住的故事。</h2>
+      <article class="story">
+        <img src="images/story-01.jpg" alt="新人於戶外自然景色中拍攝的婚紗案例" loading="lazy">
+        <div class="story-content"><div class="story-label">01 / WEDDING</div><h3>在陽光下，收藏兩個人的日常。</h3>
+          <p><strong>拍攝情境：</strong>以戶外草地與自然光為背景，記錄兩人的互動。</p>
+          <p><strong>客戶需求：</strong>不喜歡過度擺拍，希望照片能呈現平常相處的感覺。</p>
+          <p><strong>成品方向：</strong>採用溫暖自然的色調，保留真實表情與光影細節。</p></div>
+      </article>
+      <article class="story">
+        <img src="images/story-02.jpg" alt="婚禮儀式中親友與新人互動的婚禮紀錄案例" loading="lazy">
+        <div class="story-content"><div class="story-label">02 / CEREMONY</div><h3>比起完美，更想留下真實的感動。</h3>
+          <p><strong>拍攝情境：</strong>小型婚禮與親友聚會，記錄整場儀式。</p>
+          <p><strong>客戶需求：</strong>希望完整留下親友祝福與重要儀式。</p>
+          <p><strong>成品方向：</strong>以紀實攝影為主，捕捉自然互動與現場氛圍。</p></div>
+      </article>
+      <article class="story">
+        <img src="images/story-03.jpg" alt="自然光影下的個人形象攝影案例" loading="lazy">
+        <div class="story-content"><div class="story-label">03 / PORTRAIT</div><h3>找到最接近自己的樣子。</h3>
+          <p><strong>拍攝情境：</strong>個人形象照，使用簡約室內空間與自然光。</p>
+          <p><strong>客戶需求：</strong>需要能呈現個人特色與專業感的照片。</p>
+          <p><strong>成品方向：</strong>保留自然膚質與人物特徵，不過度修飾。</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="services-header"><div class="en">OUR SERVICES</div><h2 class="section-title">用適合你的方式，記錄重要時刻。</h2><p class="section-intro" style="margin:auto">每個人的故事都不同，我們提供不同拍攝方案。</p></div>
+      <div class="service-grid">
+        <article class="service-card"><div class="en">01 / WEDDING</div><h3>婚紗攝影方案</h3><p>為兩個人的愛情留下自然的影像。</p><div class="price">NT$18,000 <small>起</small></div><ul><li>✓ 拍攝時間約 4 小時</li><li>✓ 1 位專業攝影師</li><li>✓ 精選調色照片 80 張以上</li><li>✓ 精修照片 20 張</li><li>✓ 電子檔雲端交付</li><li>✓ 預計 30–45 個工作天</li></ul></article>
+        <article class="service-card"><div class="en">02 / CEREMONY</div><h3>婚禮紀錄方案</h3><p>記錄儀式、親友與每個珍貴瞬間。</p><div class="price">NT$28,000 <small>起</small></div><ul><li>✓ 婚禮當日拍攝</li><li>✓ 1 位專業攝影師</li><li>✓ 全程紀實攝影</li><li>✓ 精選調色照片 300 張以上</li><li>✓ 電子檔雲端交付</li><li>✓ 預計 45–60 個工作天</li></ul></article>
+        <article class="service-card"><div class="en">03 / PORTRAIT</div><h3>個人形象方案</h3><p>呈現自然、自信且具有個人特色的你。</p><div class="price">NT$8,000 <small>起</small></div><ul><li>✓ 拍攝時間約 2 小時</li><li>✓ 1 位專業攝影師</li><li>✓ 精選調色照片 30 張以上</li><li>✓ 精修照片 8 張</li><li>✓ 電子檔雲端交付</li><li>✓ 預計 14–21 個工作天</li></ul></article>
+      </div>
+      <p class="service-note">※ 以上為示意價格，實際報價依拍攝需求、地點及時數調整。額外精修與加購項目須於拍攝前另行確認。</p>
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="container">
+      <div class="process-header"><div class="en">HOW WE WORK</div><h2 class="section-title">從第一次聯繫，到照片交付。</h2></div>
+      <div class="process-grid">
+        <div class="process-item"><div class="process-number">01</div><h3>詢問</h3><p>填寫表單，確認拍攝需求與檔期。</p></div>
+        <div class="process-item"><div class="process-number">02</div><h3>溝通</h3><p>討論風格、場地、時間與細節。</p></div>
+        <div class="process-item"><div class="process-number">03</div><h3>拍攝</h3><p>依照規劃完成拍攝與現場紀錄。</p></div>
+        <div class="process-item"><div class="process-number">04</div><h3>精修</h3><p>挑選照片並進行自然色調調整。</p></div>
+        <div class="process-item"><div class="process-number">05</div><h3>交件</h3><p>透過雲端交付完整攝影作品。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <img src="images/photographer.jpg" alt="小林攝影工作室攝影師工作側拍" loading="lazy">
+      <div class="about-content"><div class="en">ABOUT THE PHOTOGRAPHER</div><h2 class="section-title">你好，我是小林。</h2>
+        <p>我是一名來自臺中的攝影師，喜歡透過鏡頭觀察生活，將那些容易被忽略的小細節，轉化成值得收藏的影像。</p>
+        <p>對我而言，攝影不只是留下漂亮的照片，更重要的是理解每個人的故事。無論是婚紗、婚禮，還是個人形象拍攝，我都希望能讓每個人在鏡頭前感到自在。</p>
+        <p>我不追求過度修飾的完美，而是希望保留真實的情緒、自然的光線，以及人與人之間最珍貴的關係。</p>
+        <div class="signature">— Lin</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-header"><div class="en">LET'S CREATE MEMORIES</div><h2 class="section-title">讓我們一起記錄你的故事。</h2><p class="section-intro" style="margin:auto">歡迎填寫以下表單，讓我更了解你的拍攝需求。</p></div>
+      <form class="contact-form" id="inquiryForm">
+        <div class="form-grid">
+          <div class="form-group"><label for="name">姓名 *</label><input id="name" name="name" type="text" placeholder="請輸入姓名" maxlength="80" required></div>
+          <div class="form-group"><label for="phone">聯絡方式 *</label><input id="phone" name="phone" type="text" placeholder="電話或 Email" maxlength="120" required></div>
+          <div class="form-group"><label for="type">拍攝類型 *</label><select id="type" name="type" required><option value="">請選擇拍攝類型</option><option>婚紗攝影</option><option>婚禮紀錄</option><option>個人形象照</option><option>其他需求</option></select></div>
+          <div class="form-group"><label for="date">預計拍攝日期</label><input id="date" name="date" type="date"></div>
+          <div class="form-group"><label for="location">拍攝地點</label><input id="location" name="location" type="text" placeholder="例如：臺中市" maxlength="200"></div>
+          <div class="form-group"><label for="budget">預算範圍</label><select id="budget" name="budget"><option value="">請選擇預算</option><option>NT$8,000 以下</option><option>NT$8,000–18,000</option><option>NT$18,000–30,000</option><option>NT$30,000–50,000</option><option>NT$50,000 以上</option></select></div>
+          <div class="form-group full"><label for="message">其他需求與留言</label><textarea id="message" name="message" maxlength="3000" placeholder="請告訴我你期待的拍攝風格、需求或其他想法。"></textarea></div>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">送出拍攝詢問 →</button>
+        <p id="formStatus" role="status" aria-live="polite"></p>
+        <p class="form-note">送出後，系統會將詢單資料傳送至工作室的 Google 試算表，並觸發 Email 通知。請勿在留言中填寫密碼或其他敏感資料。</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div><h3>小林攝影工作室.</h3><p>用影像收藏真實，讓每一份感動都有跡可循。</p><p>Based in Taichung, Taiwan.</p></div>
+      <div><h3>CONTACT</h3><a href="mailto:your-email@example.com">Email：your-email@example.com</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram：前往帳號</a></div>
+      <div><h3>INFORMATION</h3><p>服務地區：臺中及周邊地區</p><p>服務項目：婚紗・婚禮・形象照</p><a href="#contact">預約與檔期詢問 →</a></div>
+    </div>
+    <div class="copyright">© 2026 小林攝影工作室. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // 手機版導覽選單
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+  menuBtn.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("show");
+    menuBtn.setAttribute("aria-expanded", String(isOpen));
+    menuBtn.textContent = isOpen ? "×" : "☰";
+  });
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.textContent = "☰";
+    });
+  });
+
+  // 作品分類篩選
+  const tabs = document.querySelectorAll(".tab");
+  const photos = document.querySelectorAll(".photo");
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(item => {
+        item.classList.remove("active");
+        item.setAttribute("aria-pressed", "false");
+      });
+      tab.classList.add("active");
+      tab.setAttribute("aria-pressed", "true");
+      const filter = tab.dataset.filter;
+      photos.forEach(photo => {
+        photo.hidden = filter !== "all" && photo.dataset.category !== filter;
+      });
+    });
+  });
+
+  // Google 試算表詢單系統
+  // 請將下方網址替換成 Google Apps Script 部署後的 Web App URL（以 /exec 結尾）
+  const GOOGLE_SCRIPT_URL = "請貼上你的Google Apps Script Web App URL";
+
+  const inquiryForm = document.getElementById("inquiryForm");
+  const submitBtn = document.getElementById("submitBtn");
+  const formStatus = document.getElementById("formStatus");
+
+  inquiryForm.addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    if (submitBtn.disabled) return;
+
+    if (!GOOGLE_SCRIPT_URL.startsWith("https://script.google.com/macros/s/") ||
+        !GOOGLE_SCRIPT_URL.endsWith("/exec")) {
+      formStatus.style.color = "#B85C5C";
+      formStatus.textContent = "系統尚未設定完成，請先填入 Google Apps Script Web App URL。";
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "正在送出...";
+    formStatus.textContent = "";
+
+    const params = new URLSearchParams();
+    for (const [key, value] of new FormData(inquiryForm).entries()) {
+      params.append(key, value);
+    }
+
+    try {
+      // Google Apps Script Web App 使用表單編碼接收資料。
+      // no-cors 無法讀取伺服器回應，因此前端不能據此確認寫入／寄信是否成功。
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: params
+      });
+
+      formStatus.style.color = "#64866B";
+      formStatus.textContent = "已送出提交請求。由於瀏覽器無法讀取系統回覆，請以 Google 試算表及通知信確認是否成功登記。";
+      inquiryForm.reset();
+    } catch (error) {
+      console.error("詢單提交錯誤：", error);
+      formStatus.style.color = "#B85C5C";
+      formStatus.textContent = "目前無法送出，請檢查網路連線或稍後再試。";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "送出拍攝詢問 →";
+    }
+  });
+</script>
+</body>
+</html>
