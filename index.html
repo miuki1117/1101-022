@@ -237,7 +237,7 @@
       <form class="contact-form" id="inquiryForm">
         <div class="form-grid">
           <div class="form-group"><label for="name">姓名 *</label><input id="name" name="name" type="text" placeholder="請輸入姓名" maxlength="80" required></div>
-          <div class="form-group"><label for="phone">聯絡方式 *</label><input id="phone" name="phone" type="text" placeholder="電話或 Email" maxlength="120" required></div>
+          <div class="form-group"><label for="phone">聯絡方式 *</label><input id="phone" name="contact" type="text" placeholder="電話或 Email" maxlength="120" required></div>
           <div class="form-group"><label for="type">拍攝類型 *</label><select id="type" name="type" required><option value="">請選擇拍攝類型</option><option>婚紗攝影</option><option>婚禮紀錄</option><option>個人形象照</option><option>其他需求</option></select></div>
           <div class="form-group"><label for="date">預計拍攝日期</label><input id="date" name="date" type="date"></div>
           <div class="form-group"><label for="location">拍攝地點</label><input id="location" name="location" type="text" placeholder="例如：臺中市" maxlength="200"></div>
@@ -299,7 +299,8 @@
   });
 
   // Google 試算表詢單系統
-  // 請將下方網址替換成 Google Apps Script 部署後的 Web App URL（以 /exec 結尾）
+  // 請將下方網址替換成 Google Apps Script 部署後的 Web App URL（以 /exec 結尾）。
+  // 通知信箱請在 google-apps-script.gs 的 NOTIFY_EMAIL 設定，不需要寫在前端。
   const GOOGLE_SCRIPT_URL = "請貼上你的Google Apps Script Web App URL";
 
   const inquiryForm = document.getElementById("inquiryForm");

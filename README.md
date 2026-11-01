@@ -36,8 +36,10 @@ xiaolin-photography-website/
 2. 從試算表網址取得 ID：`https://docs.google.com/spreadsheets/d/這一段是ID/edit`
 3. 開啟「擴充功能 → Apps Script」，將 `google-apps-script.gs` 的程式碼貼上。
 4. 修改程式最上方的：
-   - `SHEET_ID`
-   - `NOTIFY_EMAIL`
+   - `SHEET_ID`：你的 Google 試算表 ID
+   - `NOTIFY_EMAIL`：你要接收每筆新詢單通知的 Email 地址
+
+   網站表單的聯絡方式欄位會以 `contact` 傳送，已與 Apps Script 後端欄位對應。
 5. 儲存後選擇「部署 → 新增部署作業 → 網頁應用程式」。
 6. 設定「執行身分」為「我」，「誰可以存取」依你的網站需求設定；若選擇「所有人」，公開網址可能收到垃圾提交，請留意濫用風險。
 7. 部署並授權後，複製 Web App URL。
